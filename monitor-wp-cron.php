@@ -4,7 +4,7 @@ Plugin Name: WP-Cron Fixatron
 Plugin URI: https://ajdg.solutions/
 Author: Arnan de Gans
 Author URI: https://www.arnan.me/
-Description: Run through whatever jobs were active an hour ago and maybe re-schedule the missing ones since then
+Description: Run through whatever jobs were active in the last check and maybe re-schedule the missing ones since then
 */	
 
 if(!defined('ABSPATH')) exit;
@@ -13,7 +13,8 @@ function ajdg_check_cron_jobs(){
 	$recheck_jobs = get_transient('ajdg_wpcron_recheck');
 
 	if(!$recheck_jobs) {
-		$check_interval = 43200; // Check every few hours (time in seconds)
+		// Check every few hours (time in seconds, default is 43200 (12 hours))
+		$check_interval = 43200; 
 
 		$cached_jobs = get_transient('ajdg_wpcron_cached');
 
