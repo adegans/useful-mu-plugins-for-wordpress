@@ -26,6 +26,7 @@ if(!get_transient('ajdg_update_timeout')) {
 	    	strpos($url, 'api.wordpress.org/core/version-check') !== false 
 	    	OR strpos($url, 'api.wordpress.org/plugins/update-check') !== false 
 	    	OR strpos($url, 'api.wordpress.org/themes/update-check') !== false
+	    	OR strpos($url, 'directory.classicpress.net') !== false
 	    ) {
 			return true; // Prevent the request from being sent
 		}
