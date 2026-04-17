@@ -23,6 +23,11 @@ None of these has a dashboard or any settings. But if you know your way around P
 3. Upload each plugin that you want to use.
 4. From your Plugins Dashboard, activate the plugins as shown.
 
+## Are these plugins useful for you?
+
+If you find these little plugins useful and want to help out, please consider a small [token of thanks](https://www.arnan.me/donate/)!  
+Your donations will help as motivation. Thank you for your support!  
+
 ## Disclaimer
 It should go without saying that you use these plugins at your own risk. I use them on my sites and they work for me. I believe they are useful for other users, especially advanced users, of WordPress and ClassicPress. Should anything go wrong, you loose data or your site gets compromised, that's your own responsibility.
 
